@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="tw.blogspot.justwhatiam17.androidweartest.MobileHomeActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/wannaClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:text="Notification"
+        android:onClick="WannaClicked"
+        />
+    <Button
+        android:id="@+id/GmapAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wannaClick"
+        android:text="Google Map Action"
+        android:onClick="GmapClicked"
+        />
+
+    <Button
+        android:id="@+id/WearableOnly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GmapAction"
+        android:text="WearableOnly Action"
+        android:onClick="WearableOnlyClicked"
+        />
+    <Button
+        android:id="@+id/VoiceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WearableOnly"
+        android:text="Voice Input"
+        android:onClick="VoiceInputClicked"
+        />
+
+    <Button
+        android:id="@+id/AddPageClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VoiceInput"
+        android:text="Add Page"
+        android:onClick="AddPageClicked"
+        />
+
+    <Button
+        android:id="@+id/GroupNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddPageClicked"
+        android:text="Group Notification"
+        android:onClick="GroupNotificationClicked"
+        />
+
+    <Button
+        android:id="@+id/StartWearableActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GroupNotification"
+        android:text="Start Wearable Activity"
+        android:onClick="googleServiceClicked"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartWearableActivity"
+        android:text="Send Data"
+        android:onClick="SendDataClicked"
+        />
+
+</RelativeLayout>
